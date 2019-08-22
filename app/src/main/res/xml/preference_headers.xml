@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="fragments.ParameterPreferenceFragment"
+        android:key="parameter"
+        android:title="Paremeter" />
+    <header
+        android:fragment="fragments.ServerPreferenceFragment"
+        android:key="server"
+        android:title="Server" />
+    <header
+        android:fragment="fragments.MiscPreferenceFragment"
+        android:key="misc"
+        android:title="Misc" />
+</preference-headers>

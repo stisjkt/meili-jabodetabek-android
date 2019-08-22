@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.stis.meili"
+    android:versionCode="180827006"
+    android:versionName="8.6">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="applications.Meili"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_mobility"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="activities.LoginActivity"
+            android:label="Mobility Collector"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.RegisterActivity"
+            android:label="Register Page"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.ServiceHandlingActivity"
+            android:label="Service Handling"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.AboutActivity"
+            android:label="About"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.AdminLoginActivity"
+            android:label="Administrator Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.AdminActivity"
+            android:label="Administrator Page"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.AnnotationActivity"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity android:name="activities.ServiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.PreferencesActivity"
+            android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="services.CollectingService"
+            android:enabled="true"
+            android:process=":ServiceMobilityCollector">
+            <intent-filter>
+                <action android:name="services.CollectingService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="receivers.OnBootReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:label="OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="receivers.PowerSavingReceiver"
+            android:process=":ServiceMobilityCollector" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4465fa69237930b9086154e924308ee4e4bd44b3" />
+    </application>
+
+</manifest>

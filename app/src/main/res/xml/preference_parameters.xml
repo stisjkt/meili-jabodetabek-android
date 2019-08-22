@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Filter Preferences">
+
+        <EditTextPreference
+            android:defaultValue="250"
+            android:inputType="number"
+            android:key="pref_min_acc"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/min_accuracy_summary"
+            android:title="@string/min_accuracy" />
+        <EditTextPreference
+            android:defaultValue="50"
+            android:inputType="number"
+            android:key="pref_min_dist"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/min_distance_summary"
+            android:title="@string/min_distance" />
+        <EditTextPreference
+            android:defaultValue="30000"
+            android:inputType="number"
+            android:key="pref_min_time"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/min_time_summary"
+            android:title="@string/min_time" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Accelerometer Preferences">
+
+        <EditTextPreference
+            android:defaultValue="0.6"
+            android:inputType="numberDecimal"
+            android:key="pref_acc_threshold"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/accelerometer_threshold_summary"
+            android:title="@string/accelerometer_threshold" />
+        <EditTextPreference
+            android:defaultValue="30000"
+            android:inputType="number"
+            android:key="pref_acc_period"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/accelerometer_period_summary"
+            android:title="@string/accelerometer_period" />
+        <EditTextPreference
+            android:defaultValue="90000"
+            android:inputType="number"
+            android:key="pref_acc_saving"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/power_saving_period_summary"
+            android:title="@string/power_saving_period" />
+    </PreferenceCategory>
+</PreferenceScreen>

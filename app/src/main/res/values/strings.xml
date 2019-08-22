@@ -1,0 +1,158 @@
+<resources>   
+
+    <string name="app_name">Meili Jabodetabek</string>
+    <string name="regularEmailText">Email</string>
+    <string name="regularUsernameText">Username</string>
+    <string name="regularPasswordText">Password</string>
+    <string name="registerNewUserText">Register as a new user</string>
+    <string name="loginText">Login</string>
+    <string name="registerAndLoginButton">Register and login</string>
+    <string name="titleControlCenter">MEILI Jabodetabek Control Center</string>
+    
+    <string name="subTitleText">The MEILI System is an open source project for travel diary data collection.</string>
+    <string name="versionText" translatable="false">v1.0.0</string>
+    <string name="contentText">This mobile application seamlessly collects trips (movement trace, transitions and stays/destinations) of its user and is part of the MEILI System, which is composed of this mobile application and a web application that allows the periodic convenient travel-diary-annotation of the collected trips. The collected travel diaries give valuable insight into the travel needs of individuals and the population, which are essential in transportation planning. The use of the MEILI Mobility Collector is voluntary. The mobile- and web applications give user-controls for suspending collection or deleting a collected trip and the collected data is only analyzed in an anonymous form for research purposes.</string>
+    <string name="closeButtonText">Close</string>
+    
+    <string name="adminTitleText">Administrative Mode</string>
+    <string name="sudoEmailText">Administrator</string>
+    <string name="sudoPasswordText">Password</string>
+    <string name="sudoCredentialsWrongMessage">Incorrect username or password!</string>
+    
+    <string name="menuAboutText">About</string>
+    <string name="menuAdminText">Admin</string>
+    <string name="menuStatusText">DB Status</string>
+    <string name="menuUploadText">Manual Upload</string>
+    <string name="menuGuidance">Guidance</string>
+    
+    <string name="yesText">Yes</string>
+    <string name="noText">No</string>
+    <string name="enableGPSBody">Do you want to turn the GPS receiver on?</string>
+    <string name="enableGPSTitle">GPS receiver is off</string>
+    <string name="serviceDisableBody">Do you want to turn off the MEILI Mobility Collector?</string>
+    <string name="serviceDisableTitle">Service</string>
+    <string name="stopCollectionText">Stop collection</string>
+    <string name="startCollectionText">Start collection</string>
+    
+    <string name="notificationTitle">Service is Running</string>
+    <string name="notificationActionText">Handle the collection</string>
+    
+    <string name="deactivateGPSWarning">Deactivating the GPS or WiFi will disrupt the data collection!</string>
+    <string name="internetConnectionWarning">Please make sure you have Internet access when trying to login or register!</string>
+    <string name="credentialsMissmatchWarning">Please fill in all fields!</string>
+    <string name="passwordEmpty">Please provide a password!</string>
+    <string name="confirmPassword">Re-type password!</string>
+    <string name="passwordError">The passwords do not match!</string>
+    <string name="regNoWarning">Please provide a valid registration number!</string>
+    <string name="emailWarning">Please provide a valid email address!</string>
+    <string name="phoneNumberWarning">Please provide a valid phone number!</string>
+    <string name="noUsernameWarning">Please provide a valid email or phone number!</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="regNumber">Registration Number</string>
+
+    <string name="confirmUpload">Manual upload completed</string>
+    <string name="infirmUpload">Manual upload failed</string>
+
+    <string name="status_running">Running</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="status_restarting">Restarting..</string>
+    <string name="reload_completed">Reload Completed</string>
+    <string name="status_date_format">Since %s</string>
+
+    <string name="default_server_url" translatable="false">http://meili.jutpi.id</string>
+    <string name="guidance_url" translatable="false">/guidance.html</string>
+    <string name="min_accuracy_summary">The minimum accuracy to record the location\n-> %s meter(s)</string>
+    <string name="min_accuracy">Minimum Accuracy</string>
+    <string name="min_distance_summary">The minimum distance to record the location\n-> %s meter(s)</string>
+    <string name="min_distance">Minimum Distance</string>
+    <string name="min_time_summary">The minimum interval to record the location\n-> %s millisecond(s)</string>
+    <string name="min_time">Minimum Time</string>
+    <string name="accelerometer_threshold_summary">The accelerometer threshold to record the location\n-> %s</string>
+    <string name="accelerometer_threshold">Accelerometer Threshold</string>
+    <string name="accelerometer_period_summary">The time between accelerometer values check\n-> %s millisecond(s)</string>
+    <string name="accelerometer_period">Accelerometer Check Period</string>
+    <string name="power_saving_period_summary">The time between values check in power saving\n-> %s millisecond(s)</string>
+    <string name="power_saving_period">Power Saving Check Period</string>
+    <string name="server_url_summary">The server URL to send the data\n-> %s</string>
+    <string name="server_url">Server URL</string>
+    <string name="show_logs">Record Logs</string>
+    <string name="record_accelerometer">Record Accelerometers</string>
+    <string name="show_logs_summary_show">Records logs</string>
+    <string name="show_logs_summary_hide">Does not record logs</string>
+    <string name="record_accelerometer_summary_record">Records and uploads accelerometer values</string>
+    <string name="record_accelerometer_summary_not">Does not record accelerometer values</string>
+    <string name="auto_upload_summary">The time between data auto upload\n-> %s minute(s)</string>
+    <string name="auto_upload">Auto Upload Period</string>
+
+    <string name="logs_format" translatable="false">[%1$s] %2$s/%3$s: %4$s\n</string>
+    <string name="logs_firebase_format" translatable="false">%1$s %2$s %3$s</string>
+    <string name="preference_firebase_format" translatable="false">%1$s : %2$s</string>
+    <string name="preferences_text">Preferences</string>
+    <string name="username">Username</string>
+    <string name="service_status">Status</string>
+    <string name="recorded_point">Point</string>
+    <string name="running">Running</string>
+    <string name="trip_annotation">Trip Annotation</string>
+    <string name="manual_upload">Manual Upload</string>
+    <string name="logs">Logs:</string>
+    <string name="uploading">Uploading..</string>
+    <string name="to_upload">to upload</string>
+    <string name="recorded">recorded</string>
+
+    <string name="all_at_once">All at once</string>
+    <string name="items_50">By 50 items</string>
+    <string name="items_100">By 100 items</string>
+    <string name="items_150">By 150 items</string>
+    <string name="items_200">By 200 items</string>
+    <string name="upload_chunk_size">Upload Chunk Size</string>
+    <string name="upload_chunk_size_summary">Upload recorded locations by defined size\n-> %s</string>
+    <string name="recorded_accelerometer">Accelerometer</string>
+    <string name="logs_max_lines">Logs Max Lines</string>
+    <string name="logs_max_lines_summary">The maximum lines of logs shown\n-> %s line(s)</string>
+
+    <string name="tag_gps">GPS-PROVIDER</string>
+    <string name="tag_wifi">WIFI-PROVIDER</string>
+    <string name="tag_accelerometer">ACCELEROMETER</string>
+    <string name="tag_upload">UPLOAD</string>
+    <string name="tag_service">SERVICE</string>
+    <string name="tag_settings">SETTINGS</string>
+    <string name="tag_system">SYSTEM</string>
+    <string name="tag_alarm_receiver">ALARM-RECEIVER</string>
+    <string name="tag_alarm_manager">ALARM-MANAGER</string>
+    <string name="tag_preferences_changed">PREFERENCES-CHANGES</string>
+
+    <string name="tag_gps_request">1</string>
+    <string name="tag_gps_detected">2</string>
+    <string name="tag_gps_insert">3</string>
+    <string name="tag_gps_inaccurate">4</string>
+    <string name="tag_gps_time_diff">5</string>
+    <string name="tag_gps_equal_to_prev">6</string>
+
+    <string name="tag_accelerometer_insert">1</string>
+
+    <string name="tag_uploading">1</string>
+    <string name="tag_upload_partial">2</string>
+    <string name="tag_upload_success">3</string>
+    <string name="tag_upload_no_data">4</string>
+    <string name="tag_upload_failed">5</string>
+
+    <string name="tag_service_off">0</string>
+    <string name="tag_service_on">1</string>
+    <string name="tag_service_turning_on">2</string>
+    <string name="tag_service_turning_off">3</string>
+    <string name="tag_service_failed_on">4</string>
+    <string name="tag_service_failed_off">5</string>
+    <string name="tag_service_success">6</string>
+
+    <string name="tag_system_booting_completed">1</string>
+    <string name="tag_system_denied_reg_loc">2</string>
+
+    <string name="tag_alarm_set">1</string>
+    <string name="tag_alarm_received">2</string>
+    <string name="tag_alarm_loc_timeout">3</string>
+    <string name="tag_alarm_loc_recording">4</string>
+    <string name="tag_alarm_total_mean">5</string>
+    <string name="tag_alarm_moving">6</string>
+    <string name="tag_alarm_not_moving">7</string>
+
+</resources>
